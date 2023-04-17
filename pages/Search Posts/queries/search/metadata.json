@@ -29,6 +29,7 @@
           "value": "{{search_posts.text}}"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
