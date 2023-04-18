@@ -3,6 +3,14 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Search Posts",
+      "isDefault": false
+    },
+    {
+      "id": "Chef Orders",
+      "isDefault": false
     }
   ],
   "viewMode": false,
