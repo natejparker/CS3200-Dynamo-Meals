@@ -7,6 +7,10 @@
     {
       "id": "Search Posts",
       "isDefault": false
+    },
+    {
+      "id": "Chef Orders",
+      "isDefault": false
     }
   ],
   "viewMode": false,
