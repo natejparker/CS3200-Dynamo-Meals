@@ -11,6 +11,10 @@
     {
       "id": "Chef Orders",
       "isDefault": false
+    },
+    {
+      "id": "Create post",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -19,6 +23,9 @@
   "color": "#FFDEDE",
   "icon": "calender",
   "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
     "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [],
