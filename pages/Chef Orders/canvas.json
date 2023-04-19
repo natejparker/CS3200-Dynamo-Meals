@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 470,
+          "bottomRow": 550,
           "containerStyle": "none",
           "snapRows": 81,
           "parentRowSpace": 1,
@@ -27,42 +27,14 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "currentItemsView": "{{[]}}",
-              "triggeredItemView": "{{{}}}",
-              "widgetName": "order_list",
               "requiresFlatWidgetChildren": true,
-              "listData": [
-                {
-                  "id": "001",
-                  "name": "Blue",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "002",
-                  "name": "Green",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "003",
-                  "name": "Red",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                }
-              ],
               "isCanvas": true,
-              "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-              "topRow": 7,
-              "bottomRow": 47,
+              "topRow": 10,
               "pageSize": 3,
-              "parentRowSpace": 10,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
-              "hideCard": false,
-              "templateBottomRow": 16,
-              "mainContainerId": "zzjxdagwwt",
               "animateLoading": true,
-              "primaryKeys": "{{order_list.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
-              "parentColumnSpace": 11.40625,
               "dynamicBindingPathList": [
                 {
                   "key": "currentItemsView"
@@ -84,17 +56,19 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "listData"
                 }
               ],
-              "leftColumn": 16,
-              "gridType": "vertical",
+              "leftColumn": 17,
               "enhancements": true,
               "children": [
                 {
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 450,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -155,6 +129,11 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "order_description",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -187,10 +166,10 @@
                               "leftColumn": 0,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{currentItem.name}}",
+                              "text": "{{currentItem.title}}",
                               "key": "jc3c10dq26",
                               "isDeprecated": false,
-                              "rightColumn": 12,
+                              "rightColumn": 28,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "5t8v7pzxau",
@@ -244,7 +223,7 @@
                               "leftColumn": 0,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{currentItem.id}}",
+                              "text": "{{currentItem.order_id}}",
                               "key": "jc3c10dq26",
                               "isDeprecated": false,
                               "rightColumn": 26,
@@ -411,30 +390,49 @@
                   "flexLayers": []
                 }
               ],
-              "positioning": "fixed",
-              "key": "06d9gfb8ks",
-              "backgroundColor": "transparent",
-              "isDeprecated": false,
-              "rightColumn": 40,
               "itemBackgroundColor": "#FFFFFF",
-              "widgetId": "ug4ih26stc",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
-              "parentId": "0",
               "hasMetaWidgets": true,
-              "renderMode": "CANVAS",
               "isLoading": false,
-              "responsiveBehavior": "fill",
               "mainCanvasId": "hqvdnbblas",
-              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 47,
+              "originalBottomRow": 50,
               "additionalStaticProps": [
                 "level",
                 "levelData",
                 "prefixMetaWidgetId",
                 "metaWidgetId"
               ],
+              "currentItemsView": "{{[]}}",
+              "triggeredItemView": "{{{}}}",
+              "widgetName": "order_list",
+              "listData": "{{list_orders.data}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "listData"
+                }
+              ],
+              "displayName": "List",
+              "bottomRow": 55,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "templateBottomRow": 16,
+              "mainContainerId": "zzjxdagwwt",
+              "primaryKeys": "{{order_list.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+              "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [],
+              "gridType": "vertical",
+              "positioning": "fixed",
+              "key": "06d9gfb8ks",
+              "backgroundColor": "transparent",
+              "isDeprecated": false,
+              "rightColumn": 43,
+              "widgetId": "ug4ih26stc",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "responsiveBehavior": "fill",
+              "originalTopRow": 10,
               "selectedItemView": "{{{}}}"
             },
             {
@@ -446,8 +444,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 1,
-              "bottomRow": 6,
+              "topRow": 2,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -456,7 +454,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 11.40625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 20,
+              "leftColumn": 21,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -473,7 +471,7 @@
               "text": "Orders",
               "key": "jc3c10dq26",
               "isDeprecated": false,
-              "rightColumn": 36,
+              "rightColumn": 37,
               "textAlign": "CENTER",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "blhtzw4yrp",
@@ -486,16 +484,27 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 1,
+              "originalTopRow": 2,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 6,
+              "originalBottomRow": 7,
               "fontSize": "1.875rem",
               "minDynamicHeight": 4
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Chef Orders_list_orders",
+              "name": "list_orders",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Chef Orders",
