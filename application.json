@@ -18,6 +18,9 @@
   "unreadCommentThreads": 0,
   "color": "#FFDEDE",
   "icon": "calender",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
