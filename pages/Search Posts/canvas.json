@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
     "name": "Search Posts",
-    "slug": "search-posts",
+    "slug": "search-posts", 
     "layouts": [
       {
         "viewMode": false,
