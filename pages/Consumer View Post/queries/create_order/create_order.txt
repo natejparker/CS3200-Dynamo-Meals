@@ -1,0 +1,4 @@
+{
+	post_id: {{PostIdForm.text}},
+	consumer_id: {{ConsumerIdForm.text}},
+}

@@ -13,6 +13,10 @@
       "isDefault": false
     },
     {
+      "id": "Consumer View Post",
+      "isDefault": false
+    },
+    {
       "id": "Create post",
       "isDefault": false
     }
