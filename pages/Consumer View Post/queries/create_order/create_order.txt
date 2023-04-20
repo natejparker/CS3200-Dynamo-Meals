@@ -1,4 +1,4 @@
 {
-	post_id: {{PostIdForm.text}},
-	consumer_id: {{ConsumerIdForm.text}},
+	post_id: {{post_select.selectedOptionValue}},
+	consumer_id: {{consumer_select.selectedOptionValue}},
 }

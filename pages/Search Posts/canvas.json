@@ -344,7 +344,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Cook Time: {{currentItem.expected_time}} min",
+                              "text": "Cooks In {{currentItem.expected_time}} hrs",
                               "key": "a4kixd06vj",
                               "isDeprecated": false,
                               "rightColumn": 62,

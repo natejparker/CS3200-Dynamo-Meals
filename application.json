@@ -1,10 +1,6 @@
 {
   "pages": [
     {
-      "id": "Page1",
-      "isDefault": true
-    },
-    {
       "id": "Search Posts",
       "isDefault": false
     },
@@ -18,7 +14,7 @@
     },
     {
       "id": "Create post",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "viewMode": false,

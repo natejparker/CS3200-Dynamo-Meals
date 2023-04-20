@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\tpost_id: {{PostIdForm.text}},\n\tconsumer_id: {{ConsumerIdForm.text}},\n}",
+      "body": "{\n\tpost_id: {{post_select.selectedOptionValue}},\n\tconsumer_id: {{consumer_select.selectedOptionValue}},\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,8 +52,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "ConsumerIdForm.text",
-      "PostIdForm.text"
+      "consumer_select.selectedOptionValue",
+      "post_select.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/chef"
+        "url": "web:4000/ch/chef"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Post_Form.data}}",
+      "body": "{\n\t\"chef_id\": {{chefid.selectedOptionValue}},\n\t\"title\": {{title.text}},\n\t\"description\": {{description.text}},\n\t\"currently_available\": {{currently_available.isSwitchedOn ? 'true' : 'false'}},\n\t\"expected_time\": {{expected_time.text}},\n\t\"need_delivery\": {{needs_delivery.isSwitchedOn ? 'true' : 'false'}},\n\t\"price\": {{price.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,13 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Post_Form.data"
+      "chefid.selectedOptionValue",
+      "currently_available.isSwitchedOn ? 'true' : 'false'",
+      "description.text",
+      "expected_time.text",
+      "needs_delivery.isSwitchedOn ? 'true' : 'false'",
+      "price.text",
+      "title.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

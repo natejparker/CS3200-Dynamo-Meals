@@ -1,1 +1,9 @@
-{{Post_Form.data}}
+{
+	"chef_id": {{chefid.selectedOptionValue}},
+	"title": {{title.text}},
+	"description": {{description.text}},
+	"currently_available": {{currently_available.isSwitchedOn ? 'true' : 'false'}},
+	"expected_time": {{expected_time.text}},
+	"need_delivery": {{needs_delivery.isSwitchedOn ? 'true' : 'false'}},
+	"price": {{price.text}}
+}
