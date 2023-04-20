@@ -45,7 +45,7 @@
               "templateBottomRow": 16,
               "mainContainerId": "we2lkgn96y",
               "animateLoading": true,
-              "primaryKeys": "{{posts_list.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+              "primaryKeys": "{{posts_list.listData.map((currentItem, currentIndex) => currentItem[\"title\"] )}}",
               "parentColumnSpace": 11.125,
               "dynamicTriggerPathList": [],
               "dynamicBindingPathList": [
