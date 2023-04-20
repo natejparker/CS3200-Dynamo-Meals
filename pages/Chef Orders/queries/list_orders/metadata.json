@@ -29,7 +29,6 @@
           "value": "{{select_chef.selectedOptionValue}}"
         }
       ],
-      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
