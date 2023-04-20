@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/co/get_post?post_id={{PostIdForm.text}}"
+        "url": "web:4000/co/get_post?post_id={{post_select.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -37,15 +37,19 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "PostIdForm.text"
+      "post_select.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

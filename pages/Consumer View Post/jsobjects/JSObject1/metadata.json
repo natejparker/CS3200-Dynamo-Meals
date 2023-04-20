@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Consumer View Post",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Consumer View Post_JSObject1",
+  "deleted": false,
+  "gitSyncId": "644024b2bad8e34fad168d7a_64403613f487ad3760c998a4"
+}
