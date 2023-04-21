@@ -641,9 +641,7 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Chef Orders_list_orders",
               "name": "list_orders",
