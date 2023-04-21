@@ -1523,8 +1523,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "post_select.selectedOptionValue",
-                "consumer_select.selectedOptionValue"
+                "consumer_select.selectedOptionValue",
+                "post_select.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             },

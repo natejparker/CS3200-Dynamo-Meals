@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/ch/list_chefs"
+        "url": "web:4000/ch/chefs"
       },
       "invalids": [],
       "messages": [],
