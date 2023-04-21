@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/co/get_post?post_id={{post_select.selectedOptionValue}}"
+        "url": "web:4000/co/post?post_id={{post_select.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
